@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Space</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.logo {
+    color: #6254e7;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #6254e7;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #6254e7, #9b8cff);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: white;
+    color: #6254e7;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eeeaff;
+}
+
+.features {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+.card h3 {
+    color: #6254e7;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CreativeSpace</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Build Your Creative Future</h1>
+    <p>Explore ideas, discover opportunities and create something amazing.</p>
+    <button onclick="alert('Welcome to CreativeSpace!')">
+        Get Started
+    </button>
+</section>
+
+<section class="features" id="features">
+    <h2>What We Offer</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💡 Innovation</h3>
+            <p>Discover creative ideas and turn them into reality.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎨 Design</h3>
+            <p>Experience beautiful and modern digital designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Growth</h3>
+            <p>Improve your skills and achieve your goals.</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 CreativeSpace. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
